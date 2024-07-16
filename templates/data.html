@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Intervals</title>
+</head>
+<body>
+    <h1>Available Intervals</h1>
+    <ul>
+        {% for interval in intervals %}
+        <li><a href="{{ url_for('show_latest_interval', filepath=interval) }}">{{ interval }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
